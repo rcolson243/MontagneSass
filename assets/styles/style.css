@@ -108,14 +108,14 @@ a {
   .header-page h1 {
     font-size: 2.5rem;
   }
-  .header-page .navbar-page {
-    flex-direction: column;
-  }
   .header-page .navbar-page .nav-item-group {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
+  }
+  .header-page .navbar-page .nav-item-group li {
+    border-bottom: 1px solid #ccc;
   }
   .header-page .navbar-page .nav-item-group li a {
     font-size: 0.6rem;
@@ -126,6 +126,11 @@ a {
   }
   .header-page .navbar-page .nav-item-group li:hover a {
     color: rgb(19, 19, 19);
+  }
+}
+@media screen and (max-width: 502px) {
+  .header-page .navbar-page {
+    flex-direction: column;
   }
 }
 

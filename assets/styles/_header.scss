@@ -96,13 +96,14 @@
         }
 
         .navbar-page {
-            flex-direction: column;
+            // flex-direction: column;
 
             .nav-item-group {
                 @include center_x_y;
                 justify-content: space-between;
             }
             .nav-item-group li {
+                border-bottom: 1px solid #ccc;
                 a {
                     font-size: 0.6rem;
                     
@@ -120,4 +121,12 @@
         }
 
     }
+    
+    @media screen and (max-width: 502px) {
+        .navbar-page {
+            flex-direction: column;
+
+        }
+    }
+
 }
