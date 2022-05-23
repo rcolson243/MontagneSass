@@ -1,8 +1,53 @@
 // Setting regroupe tous les reglages generaux de l'application (couleurs, font, etc...)
 
+// les variables 
+$coleur_un  : rgb(241, 239, 239);
+$coleur_deux: rgb(19, 19, 19);
+$coleur_trois: rgba(68, 68, 68, 0.889);
+
+// les code global
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+a { 
+    text-decoration: none;
+}
+
+@mixin  center_x_y  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin border_radius {
+    border-radius: 5px;
+}
+
+@mixin margin_center {
+    margin: 0 auto;
+}
+
+@mixin cercle {
+    border-radius: 50%;
+    border: 2px solid $coleur_un;
+}
+
 

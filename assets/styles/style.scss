@@ -1,2 +1,10 @@
 // les role de style.scss est de ressembler tous les fichiers sass
 
+// Setting regroupe tous les reglages generaux de l'application (couleurs, variables, etc...)
+@import "./setting";
+
+@import "./header";
+
+@import "./main";
+
+@import "./footer";
