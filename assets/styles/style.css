@@ -12,6 +12,7 @@ body {
   background-image: url(../img/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -21,6 +22,22 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.button {
+  cursor: pointer;
+  background: transparent;
+  border: rgb(19, 19, 19) solid 1px;
+  color: rgb(19, 19, 19);
+  padding: 10px 30px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-bottom: 50px;
+}
+.button:hover {
+  background: rgb(19, 19, 19);
+  color: #fff;
 }
 
 .header-page {
@@ -132,6 +149,61 @@ a {
   .header-page .navbar-page {
     flex-direction: column;
   }
+}
+
+.main-page {
+  width: 90%;
+  background-color: rgb(241, 239, 239);
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.main-page .element-un {
+  margin: 50px 0;
+}
+.main-page .element-un .text-April {
+  color: rgba(82, 82, 82, 0.678);
+  font-family: italic;
+  margin-bottom: 50px;
+}
+.main-page .element-un h2 {
+  color: rgb(19, 19, 19);
+  font-size: 2rem;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main-page .element-un .text {
+  color: rgba(82, 82, 82, 0.678);
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-family: italic;
+  width: 50%;
+}
+.main-page .element-un .image {
+  width: 70%;
+  height: 500px;
+  background-image: url(../img/pic01.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+.main-page .group-element {
+  display: flex;
+  width: 100%;
+}
+.main-page .group-element .element-deux {
+  background-color: rgb(54, 227, 149);
+  width: 50%;
+}
+.main-page .group-element .element-trois {
+  background-color: rgb(255, 0, 0);
+  height: 100px;
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

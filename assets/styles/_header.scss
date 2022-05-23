@@ -1,4 +1,5 @@
 .header-page {
+    
     height: 100%;
     text-align: center;
     @include center_x_y;
@@ -121,12 +122,11 @@
         }
 
     }
-    
+
     @media screen and (max-width: 502px) {
         .navbar-page {
             flex-direction: column;
 
         }
     }
-
 }

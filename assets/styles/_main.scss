@@ -1,0 +1,74 @@
+.main-page {
+    width: 90%;
+    background-color: $coleur_un;
+    @include margin_center;
+    padding: 20px;
+    text-align: center;
+    
+    .element-un {
+        margin: 50px 0;
+
+        .text-April {
+            color: $coleur_trois;
+            font-family: italic;
+            @include margin_bottom;
+        }
+        h2 {
+            color: $coleur_deux;
+            font-size: 2rem;
+            @include margin_bottom;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .text {
+            color: $coleur_trois;
+            font-size: 1rem;
+            line-height: 2rem;
+            @include margin_center;
+            @include margin_bottom;
+            font-family: italic;
+            width: 50%;
+        }
+
+        .image {
+            width: 70%;
+            height: 500px;
+            background-image: url(../img/pic01.jpg);
+            background-size: cover;
+            background-position: center; 
+            @include margin_center;
+            @include border_radius;
+            @include margin_bottom;
+        }
+        
+    }
+
+    .group-element {
+        display: flex;
+        width: 100%;
+        .element-deux {
+            background-color: rgb(54, 227, 149);
+            width: 50%;
+        }
+        .element-trois {
+            background-color: rgb(255, 0, 0);
+            height: 100px; 
+            width: 50%;
+        }
+    }
+
+    // responsive 
+    @media screen and (max-width: 830px) {
+        
+    }
+    @media screen and (max-width: 750px) {
+        
+
+    }
+
+    @media screen and (max-width: 502px) {
+        
+    }
+
+}
