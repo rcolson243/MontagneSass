@@ -57,7 +57,7 @@
             h3{
                 @include margin_bottom20;
                 text-transform: uppercase;
-                font-size: 1rem;
+                font-size: 1.5rem;
             }
             #p {
                 text-align: center;
@@ -94,7 +94,7 @@
     }
 
     // responsive 
-    @media screen and (max-width: 830px) {
+    @media screen and (max-width: 840px) {
 
         .element-un {
     
@@ -104,8 +104,22 @@
             }
             
         }
+
+        .group-elements {
+            flex-direction: column;
+
+            .element-deux {
+                width: 100%;
+                border: none;
+
+                .image_2 , .image_3 {
+                    height: 250px;
+                }
+            } 
+        }
         
     }
+
     @media screen and (max-width: 750px) {
         .element-un {
     
@@ -114,13 +128,15 @@
                 height: 200px;
             }
         }
-
-
-
     }
 
     @media screen and (max-width: 502px) {
-        
+        .element-deux {
+
+            .image_2 , .image_3 {
+                height: 200px;
+            }
+        }
     }
 
 }

@@ -1,9 +1,10 @@
 // Setting regroupe tous les reglages generaux de l'application (couleurs, font, etc...)
 
 // les variables 
-$coleur_un  : rgb(241, 239, 239);
-$coleur_deux: rgb(19, 19, 19);
-$coleur_trois: rgba(82, 82, 82, 0.678);
+$coleur_un  : rgb(251, 249, 249);
+$coleur_deux: rgb(41, 41, 41);
+$coleur_trois: rgba(110, 110, 110, 0.678);
+$coleur_quatre: rgba(68, 68, 68, 0.89);
 
 
 @mixin  center_x_y  {
@@ -13,7 +14,7 @@ $coleur_trois: rgba(82, 82, 82, 0.678);
 }
 
 @mixin border_radius {
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 @mixin margin_center {
