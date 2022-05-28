@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "inter-bold";
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "merri";
+  src: url(../fonts/Merriweather-Light.ttf);
+}
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -6,7 +14,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: merri, serif;
   font-size: 16px;
   color: #333;
   background-color: #fff;
@@ -54,7 +62,8 @@ a {
   font-size: 3.5rem;
   color: rgb(251, 249, 249);
   margin-bottom: 20px;
-  animation: zoom infinite;
+  -webkit-animation: zoom infinite;
+          animation: zoom infinite;
 }
 .header-page p {
   font-size: 1.3rem;
@@ -95,7 +104,7 @@ a {
   display: flex;
 }
 .header-page .navbar-page .nav-item-group li {
-  padding: 20px;
+  padding: 23px;
 }
 .header-page .navbar-page .nav-item-group li a {
   font-size: 1rem;
@@ -160,7 +169,6 @@ a {
 }
 .main-page .element-un {
   padding: 20px;
-  margin: 50px 0;
 }
 .main-page .element-un .text-April {
   color: rgba(110, 110, 110, 0.678);
@@ -392,6 +400,4 @@ footer {
     color: rgb(41, 41, 41);
     font-size: 1rem;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

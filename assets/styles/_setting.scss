@@ -1,10 +1,24 @@
 // Setting regroupe tous les reglages generaux de l'application (couleurs, font, etc...)
 
+// la police 
+@font-face {
+    font-family: "inter-bold";
+    src: url(../fonts/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "merri";
+    src: url(../fonts/Merriweather-Light.ttf);
+}
+
 // les variables 
 $coleur_un  : rgb(251, 249, 249);
 $coleur_deux: rgb(41, 41, 41);
 $coleur_trois: rgba(110, 110, 110, 0.678);
 $coleur_quatre: rgba(68, 68, 68, 0.89);
+$font_un: inter-bold, sans-serif;
+$font_deux: merri, serif;
+
 
 
 @mixin  center_x_y  {
@@ -46,7 +60,7 @@ $coleur_quatre: rgba(68, 68, 68, 0.89);
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font_deux;
     font-size: 16px;
     color: #333;
     background-color: #fff;
